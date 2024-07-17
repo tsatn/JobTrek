@@ -1,33 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Page, useStore } from './lib/useStore'
+import { HomePage } from './routes/HomePage' 
+import { BadPage } from './routes/BadPage'
+import { JobListPage } from './routes/JobListPage'
+import { JobDetailPage } from './routes/JobDetailPage'
+import { LoginPage } from './routes/LoginPage'
+import { RegisterPage } from './routes/RegisterPage'
+import { ProfilePage } from './routes/ProfilePage'
+
+
+const Router: Record<Page, React.FC<{}>> = {
+    'home': HomePage,
+    'bad': BadPage,
+    'jobList': JobListPage,
+    'jobDetail': JobDetailPage,
+    'login': LoginPage,
+    'register': RegisterPage,
+    'profile': ProfilePage,
+}
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { page } = useStore()
+  const CurrentPage = Router[page]
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <CurrentPage />
     </>
   )
 }
