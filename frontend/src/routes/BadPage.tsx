@@ -1,9 +1,3 @@
-
-
 export const BadPage = () => {
-    return (
-        <>
-            Something went wrong
-        </>
-    )
+  return <>Something went wrong</>
 }

@@ -1,9 +1,3 @@
-
-
 export const JobListPage = () => {
-    return (
-        <>
-            job list
-        </>
-    )
+  return <>job list</>
 }

@@ -1,9 +1,3 @@
-
-
 export const RegisterPage = () => {
-    return (
-        <>
-            Register
-        </>
-    )
+  return <>Register</>
 }

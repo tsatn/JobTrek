@@ -1,9 +1,3 @@
-
-
 export const JobDetailPage = () => {
-    return (
-        <>
-            detail
-        </>
-    )
+  return <>detail</>
 }
