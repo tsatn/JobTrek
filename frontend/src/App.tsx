@@ -1,11 +1,11 @@
 import { Page, useStore } from './lib/useStore'
-import { HomePage } from './routes/HomePage'
-import { BadPage } from './routes/BadPage'
-import { JobListPage } from './routes/JobListPage'
-import { JobDetailPage } from './routes/JobDetailPage'
-import { LoginPage } from './routes/LoginPage'
-import { RegisterPage } from './routes/RegisterPage'
-import { ProfilePage } from './routes/ProfilePage'
+import { HomePage } from './pages/HomePage'
+import { BadPage } from './pages/BadPage'
+import { JobListPage } from './pages/JobListPage'
+import { JobDetailPage } from './pages/JobDetailPage'
+import { LoginPage } from './pages/LoginPage'
+import { RegisterPage } from './pages/RegisterPage'
+import { ProfilePage } from './pages/ProfilePage'
 
 const Router: Record<Page, React.FC<{}>> = {
   home: HomePage,
