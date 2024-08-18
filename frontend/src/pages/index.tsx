@@ -1,0 +1,7 @@
+export { BadPage } from './BadPage'
+export { HomePage } from './HomePage'
+export { JobDetailPage } from './JobDetailPage'
+export { JobListPage } from './JobListPage'
+export { LoginPage } from './LoginPage'
+export { ProfilePage } from './ProfilePage'
+export { RegisterPage } from './RegisterPage'
