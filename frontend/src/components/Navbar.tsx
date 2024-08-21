@@ -19,7 +19,7 @@ export default function Navbar() {
           </Link>
           <nav className='hidden md:flex gap-4'>
             <Link
-              to='#'
+              to='/'
               className='font-medium flex items-center text-sm transition-colors hover:underline'
             >
               Home
@@ -45,7 +45,7 @@ export default function Navbar() {
           </nav>
           <div className='flex items-center gap-4'>
             <Button variant='outline' size='sm'>
-              Sign in
+              <Link to='/login'>Sign in</Link>
             </Button>
             <Button size='sm'>Sign up</Button>
           </div>

@@ -1,18 +1,25 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { NavbarLayout } from '@/layouts/NavbarLayout.tsx'
-import { HomePage } from './pages'
+import { 
+    EnterPage,
+    JobDashboardPage
+ } from './pages'
 
 const router = createBrowserRouter([
+  {
+    path: '/auth/enter',
+    element: <EnterPage />,
+  },
   {
     path: '/',
     element: <NavbarLayout />,
     children: [
-      {
-        path: '/',
-        element: <HomePage />,
-      },
-    ],
-  },
+        {
+            path: '/',
+            element: <JobDashboardPage />
+        }
+    ]
+  }
 ])
 
 function App() {
