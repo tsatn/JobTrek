@@ -3,7 +3,8 @@
  * @see https://v0.dev/t/xYHqD5MkVkT
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import { Button } from '@/components/ui/button'
+// import { Button } from '@/components/ui/button'
+import Sign from '@/components/Sign'
 import { SVGProps } from 'react'
 import { Link } from 'react-router-dom'
 import { JSX } from 'react/jsx-runtime'
@@ -44,10 +45,7 @@ export default function Navbar() {
             </Link>
           </nav>
           <div className='flex items-center gap-4'>
-            <Button variant='outline' size='sm'>
-              <Link to='/login'>Sign in</Link>
-            </Button>
-            <Button size='sm'>Sign up</Button>
+            <Sign />
           </div>
         </div>
       </div>
