@@ -2,9 +2,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { NavbarLayout } from '@/layouts/NavbarLayout.tsx'
 import { 
     EnterPage,
-    JobDashboardPage
+    JobDashboardPage,
  } from './pages'
-
 const router = createBrowserRouter([
   {
     path: '/auth/enter',
