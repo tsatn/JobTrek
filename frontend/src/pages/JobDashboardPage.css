@@ -1,0 +1,15 @@
+.JobDashboardPage {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.JobDashboardPage > div {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
