@@ -11,7 +11,7 @@ import { JSX } from 'react/jsx-runtime'
 export default function Navbar() {
   return (
     <nav className='fixed inset-x-0 top-0 z-50 bg-white shadow-sm dark:bg-gray-950/90'>
-      <div className='w-full max-w-7xl mx-auto px-4'>
+      <div className='w-full mx-auto px-4'>
         <div className='flex justify-between h-14 items-center'>
           <Link to='#' className='flex items-center'>
             <MountainIcon className='h-6 w-6' />

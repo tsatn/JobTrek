@@ -24,7 +24,7 @@ const JobSection: React.FC<JobSectionProps> = ({ title, jobs, actionText }) => {
       </div>
 
       {/* Fixed Button at Bottom */}
-      <div className="mt-4">
+      <div className="m-4">
         <button className="bg-primary text-primary-foreground w-full px-3 py-2 rounded-md">
           {actionText}
         </button>

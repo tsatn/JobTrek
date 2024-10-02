@@ -15,10 +15,10 @@ export const JobDashboardPage = () => {
   const offerJobs = [{ id: 8, title: 'Graduate Engineer', company: 'Palo Alto Networks' }];
 
   return (
-    <div className="dashboard bg-blue h-full w-full p-4">
-      <h2 className="text-2xl font-bold mb-4">Job Tracker Dashboard</h2>
+    <div className="dashboard bg-blue-100 h-full w-full flex flex-col">
+      <h2 className="text-2xl font-bold pb-4">Job Tracker Dashboard</h2>
       {/* Scrollable job sections */}
-      <div className="job-sections flex space-x-4 overflow-x-auto items-start w-full h-full">
+      <div className="job-sections flex space-x-4 overflow-x-auto items-start w-full h-full p-4">
         <JobSection title="Saved" jobs={[...savedJobs, ...savedJobs1, ...savedJobs2, ...savedJobs3, ...savedJobs4]} actionText="Add Job" />
         <JobSection title="Applied" jobs={appliedJobs} actionText="Set application date" />
         <JobSection title="Interview" jobs={interviewJobs} actionText="Add an interview" />
